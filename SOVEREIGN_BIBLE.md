@@ -18,6 +18,10 @@
 - **Directive**: All service health probes must be ARM64-compatible.
 - **Action**: Inject only the 'v0.4.34-linux-arm64' grpc_health_probe binary during stabilization.
 
+### Rule 11: The Minimalism Lock (Configuration Over Modification)
+- **Directive**: No code or manifest modifications are permitted if a configuration variable, environment variable, or official script can achieve the same result.
+- **Action**: Always prioritize standard configuration patterns (e.g., `TFS_COMPONENTS` in `tfs.sh`) over manual "hacking" of YAMLs or source code. Any non-trivial modification must be cross-referenced against the original ETSI baseline and explicitly approved.
+
 ## Sovereign Lite-Configuration Whitelist (Mandated 8 Services)
 1. contextservice
 2. deviceservice
