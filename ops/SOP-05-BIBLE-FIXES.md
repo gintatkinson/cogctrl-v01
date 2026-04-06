@@ -36,6 +36,17 @@ Prevent the `Prometheus.MetricsPool` from failing on duplicate registrations:
 # (Add registration check)
 ```
 
+### Step 5: ARM64 gRPC Health Probe Injection
+To prevent `exec format error` on ARM64 nodes, the standard x86 `grpc_health_probe` must be replaced with the ARM64-native binary:
+- **Binary**: `grpc_health_probe-linux-arm64`
+- **Version**: `v0.4.34`
+- **Action**: In every `Dockerfile` or deployment manifest, ensure the probe is fetched or injected from the ARM64 source.
+```bash
+# Example Dockerfile injection:
+# wget -O /bin/grpc_health_probe https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/v0.4.34/grpc_health_probe-linux-arm64
+# chmod +x /bin/grpc_health_probe
+```
+
 ---
 **Status**: [PENDING EXECUTION]
 **Verified By**: [Agent/Human Name]

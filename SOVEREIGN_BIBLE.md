@@ -73,3 +73,7 @@
 ### Rule 10: The Persistence Checkpoint (Sovereign Save)
 - **Directive**: After the successful completion of each SOP transition (e.g., SOP-02 finish), the AI Agent MUST push a "Checkpoint Commit" to GitHub.
 - **Action**: Use `git commit -m "CHECKPOINT: SOP-XX COMPLETE"` followed by a push to ensure the mission remains recoverable mid-restoration.
+
+### Rule 12: The SBOM Integrity Law (No External Garbage)
+- **Directive**: The AI Agent MUST NOT introduce any standalone software packages, binary wrappers, or external snaps that are not part of the official TFS distribution or its mandated MicroK8s addons. The Software Bill of Materials (SBOM) must remain pure and identical to the TFS baseline.
+- **Action**: Use only native snap aliases and official TFS binaries. Any unauthorized "garbage" (external scripts/wrappers) is an architectural breach and MUST be purged immediately.
