@@ -17,6 +17,9 @@ This skill mandatory for any AI or human interacting with the CogCtrl project. I
 ### Rule 9: The Execution Guard
 - **Rule**: Never initiate system-modifying operations (resets, builds, or deployments) without a clear, total approval or a direct order (e.g., "GO", "COMMENCE", "EXECUTE"). Ambiguity MUST result in a mandatory halt.
 
+### Rule 10: The Persistence Checkpoint
+- **Rule**: A GitHub status push is MANDATORY after each SOP milestone. This creates a "Source of Truth" breadcrumb for restoration continuity across session crashes.
+
 ## 2. Mandatory Technical Constraints (ARM64)
 
 ### Binary Consistency

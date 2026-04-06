@@ -49,3 +49,7 @@
 ### Rule 9: Explicit Authorization Lock (The Execution Guard)
 - **Directive**: The AI Agent MUST NEVER initiate system-modifying operations (builds, deployments, or resets) based on informational queries or ambiguous responses. 
 - **Action**: Proceed ONLY upon receiving a clear, total approval or a direct order (e.g., "GO", "COMMENCE", "EXECUTE"). Any ambiguity MUST result in a halt and a request for confirmation.
+
+### Rule 10: The Persistence Checkpoint (Sovereign Save)
+- **Directive**: After the successful completion of each SOP transition (e.g., SOP-02 finish), the AI Agent MUST push a "Checkpoint Commit" to GitHub.
+- **Action**: Use `git commit -m "CHECKPOINT: SOP-XX COMPLETE"` followed by a push to ensure the mission remains recoverable mid-restoration.

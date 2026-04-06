@@ -13,6 +13,7 @@ Any interaction with this system is governed by the **Meta-Cognitive Locks** def
 *   **Rule 7 (The Stable-200 Law)**: All VM environments must adhere to the 16G/200G/4-CPU resource baseline.
 *   **Rule 8 (The Browser Lock)**: AI Agents MUST NEVER use web-access tools for GitHub; terminal-only interaction is mandated.
 *   **Rule 9 (The Execution Guard)**: AI Agents MUST NEVER initiate modifications (resets, builds, deployments) without explicit, unambiguous approval (e.g., "GO", "EXECUTE").
+*   **Rule 10 (The Persistence Checkpoint)**: A status push to GitHub is MANDATORY after each successful SOP milestone.
 
 ## 🚀 The First Command (Recovery)
 
