@@ -15,7 +15,7 @@
 - **Action**: A deployment is only verified as successful when all 13 primary WebUI modules load correctly within the 3-second limit.
 
 ### Rule 5: Meta-Cognitive Ground Truth Lock
-- **Directive**: Never trust the runtime state (kubectl get pods) as a benchmark for architectural correctness. 
+- **Directive**: Never trust the runtime state (kubectl get pods) as a benchmark for architectural correctness.
 - **Action**: Reconcile active services only against the mandated 8-service whitelist.
 
 ### Rule 6: The 120s Backoff Law (Deployment Throttle)
@@ -36,7 +36,7 @@
 
 ### Rule 11: The Minimalism Lock (Configuration Over Modification)
 - **Directive**: No code or manifest modifications are permitted if a configuration variable, environment variable, or official script can achieve the same result.
-- **Action**: Always prioritize standard configuration patterns (e.g., `TFS_COMPONENTS` in `tfs.sh`) over manual "hacking" of YAMLs or source code. Any non-trivial modification must be cross-referenced against the original ETSI baseline and explicitly approved.
+- **Action**: Always prioritize standard configuration patterns (e.g., TFS_COMPONENTS in tfs.sh) over manual "hacking" of YAMLs or source code. Any non-trivial modification must be cross-referenced against the original ETSI baseline and explicitly approved.
 
 ## Sovereign Lite-Configuration Whitelist (Mandated 8 Services)
 1. contextservice
