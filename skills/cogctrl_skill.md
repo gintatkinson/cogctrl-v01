@@ -14,6 +14,9 @@ This skill mandatory for any AI or human interacting with the CogCtrl project. I
 ### Rule 8: The Browser Lock
 - **Rule**: Interaction with GitHub MUST be conducted via the terminal ONLY. Browser-based agent auditing or repository access is strictly prohibited.
 
+### Rule 9: The Execution Guard
+- **Rule**: Never initiate system-modifying operations (resets, builds, or deployments) without a clear, total approval or a direct order (e.g., "GO", "COMMENCE", "EXECUTE"). Ambiguity MUST result in a mandatory halt.
+
 ## 2. Mandatory Technical Constraints (ARM64)
 
 ### Binary Consistency

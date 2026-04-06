@@ -45,3 +45,7 @@
 ### Rule 8: Web-Access Sovereignty (The Browser Lock)
 - **Directive**: The AI Agent MUST NEVER use the browser subagent or any web-access tool to interact with GitHub. 
 - **Action**: Use ONLY the terminal/git-cli for all repository operations. Direct WebUI interaction via an agent is an architectural breach.
+
+### Rule 9: Explicit Authorization Lock (The Execution Guard)
+- **Directive**: The AI Agent MUST NEVER initiate system-modifying operations (builds, deployments, or resets) based on informational queries or ambiguous responses. 
+- **Action**: Proceed ONLY upon receiving a clear, total approval or a direct order (e.g., "GO", "COMMENCE", "EXECUTE"). Any ambiguity MUST result in a halt and a request for confirmation.
