@@ -41,3 +41,7 @@
 ### The 3-Second Rule (Visual Acceptance)
 - **Directive**: Every primary UI screen MUST load in less than 3 seconds.
 - **Action**: Conduct recursive load audits for all 13 modules during final acceptance.
+
+### Rule 8: Web-Access Sovereignty (The Browser Lock)
+- **Directive**: The AI Agent MUST NEVER use the browser subagent or any web-access tool to interact with GitHub. 
+- **Action**: Use ONLY the terminal/git-cli for all repository operations. Direct WebUI interaction via an agent is an architectural breach.

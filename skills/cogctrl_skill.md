@@ -11,6 +11,9 @@ This skill mandatory for any AI or human interacting with the CogCtrl project. I
 ### Zero-Anchor "Ground Zero" Reset
 - **Rule**: If the system's "Source of Truth" is compromised, do not attempt to "stabilize" it. WIPE the workspace and the VM, and rebuild from the official ETSI snapshot as defined in the `cogctrl_bootstrap.sh`.
 
+### Rule 8: The Browser Lock
+- **Rule**: Interaction with GitHub MUST be conducted via the terminal ONLY. Browser-based agent auditing or repository access is strictly prohibited.
+
 ## 2. Mandatory Technical Constraints (ARM64)
 
 ### Binary Consistency

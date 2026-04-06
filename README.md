@@ -11,6 +11,7 @@ Any interaction with this system is governed by the **Meta-Cognitive Locks** def
 *   **Rule 4 (The 20% Law)**: No pod manifests or runtime states may exceed 80% CPU or result in OOMKills.
 *   **Rule 5 (The Ground Truth Lock)**: Never trust the current cluster state. Always reconcile against the Whitelist and this Bible.
 *   **Rule 7 (The Stable-200 Law)**: All VM environments must adhere to the 16G/200G/4-CPU resource baseline.
+*   **Rule 8 (The Browser Lock)**: AI Agents MUST NEVER use web-access tools for GitHub; terminal-only interaction is mandated.
 
 ## 🚀 The First Command (Recovery)
 
