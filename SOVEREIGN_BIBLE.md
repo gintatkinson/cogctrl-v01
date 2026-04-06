@@ -2,9 +2,25 @@
 
 ## Governance Rules (Meta-Cognitive Locks)
 
+### Rule 1: The Succession Law (Documentation-First)
+- **Directive**: Every bug encountered or dependency added MUST first be documented in the Succession Skill or this Bible BEFORE applying the fix.
+- **Action**: Prevent "Wisdom Loss" by maintaining a persistent ledger of all architectural corrections.
+
+### Rule 2: The Ground Zero Law (Zero-Anchor Reset)
+- **Directive**: If the system's "Source of Truth" is compromised or deviates from this Bible, do not attempt to "patch" the failure.
+- **Action**: Execute a total "Ground Zero" purge (VM deletion and workspace reset) and rebuild from the official ETSI Master.
+
+### Rule 3: The Audit-First Law (13-Screen UI Success)
+- **Directive**: System "Health" is NOT defined by backend logs or pod status alone.
+- **Action**: A deployment is only verified as successful when all 13 primary WebUI modules load correctly within the 3-second limit.
+
 ### Rule 5: Meta-Cognitive Ground Truth Lock
-- **Directive**: Never trust the runtime state of the cluster (kubectl get pods) as a benchmark for architectural correctness. 
-- **Action**: Always cross-reference the active pods with the MANDATED service whitelist in 'deploy/tfs.sh' or this Bible.
+- **Directive**: Never trust the runtime state (kubectl get pods) as a benchmark for architectural correctness. 
+- **Action**: Reconcile active services only against the mandated 8-service whitelist.
+
+### Rule 6: The 120s Backoff Law (Deployment Throttle)
+- **Directive**: To prevent "Handshake Storms" and gRPC timeouts on ARM64, services must be deployed with a mandatory cooldown.
+- **Action**: Enforce a 120-second sleep between each core service activation.
 
 ### Architectural Silence Directive
 - **Directive**: Any service discovered in the cluster that is NOT in the mandated Lite-Configuration (e.g., Monitoring, Load-Generator, Kafka) is considered unauthorized.
