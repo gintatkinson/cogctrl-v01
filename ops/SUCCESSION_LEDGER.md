@@ -40,3 +40,9 @@ This ledger is the persistent memory of all failure points, architectural compro
 - **Rule 8 Violation**: Used `browser_subagent` for UI audit, bypassing gRPC integrity checks.
 - **Succession Warning**: **PORT 443 (HTTPS) IS THE ONLY AUTHORIZED GATEWAY.** All services MUST live in the `tfs` namespace. 
 - **Neural Anchor**: If `https://<IP>/tfs-api/` is not reachable, do NOT map a port. Debug the Ingress.
+
+---
+## [Checkpoint] SOP-01 Verified
+**Time**: 2026-04-07T11:41:45Z
+**Result**: PASSED
+
