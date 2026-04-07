@@ -1,0 +1,32 @@
+{
+  "SOP-01": {
+    "command": "ls /Users/perkunas/.gemini/antigravity/scratch/cogctrl-enclave",
+    "expected_result": "No such file or directory",
+    "description": "Verify Host Purity (Ground Zero)."
+  },
+  "SOP-02": {
+    "command": "multipass info cogctrl-node",
+    "expected_result": "cogctrl-node",
+    "description": "Verify VM is provisioned and running."
+  },
+  "SOP-03": {
+    "command": "multipass exec cogctrl-node -- microk8s status",
+    "expected_result": "microk8s is running",
+    "description": "Verify Kubernetes cluster status."
+  },
+  "SOP-04": {
+    "command": "multipass exec cogctrl-node -- ls /home/ubuntu/tfs-main",
+    "expected_result": "src",
+    "description": "Verify source code is available in the VM."
+  },
+  "SOP-06": {
+    "command": "multipass exec cogctrl-node -- microk8s kubectl get pods -n tfs",
+    "expected_result": "1/1",
+    "description": "Verify 9 core services are Ready in 'tfs' namespace."
+  },
+  "SOP-09": {
+    "command": "curl -k https://192.168.2.24/tfs-api/links",
+    "expected_result": "200",
+    "description": "Verify HTTPS API connectivity on Port 443."
+  }
+}

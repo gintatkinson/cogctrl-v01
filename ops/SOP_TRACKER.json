@@ -1,6 +1,6 @@
 {
-  "current_sop_id": "SOP-06",
+  "current_sop_id": "SOP-06-RESTORE",
   "last_verified_at": "2026-04-07T12:21:35Z",
-  "mission_status": "Core_Activation_In_Progress",
+  "mission_status": "Critical_Resource_Starvation_Recovery",
   "recovery_instruction": "Execute bash checkpoint.sh --verify to re-anchor."
 }

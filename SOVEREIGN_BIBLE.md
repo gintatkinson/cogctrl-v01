@@ -55,6 +55,10 @@
 - **Directive**: Any service exposure MUST use the official TFS Ingress (NGINX) and terminate at Port 443 on the Host IP. 
 - **Action**: Creating custom NodePorts or using non-standard HTTP ports for WebUI/API access is an ARCHITECTURAL BREACH. If `https://<IP>/tfs-api/` fails, debug the Ingress manifest; do NOT map a port.
 
+### Rule 14: The Recovery Law (Context Persistence)
+- **Directive**: Every new session, context reset, or Antigravity restart MUST begin by executing the Sovereign Recovery Checkpoint.
+- **Action**: Run `bash checkpoint.sh` to verify the "Ground Truth" of the last completed SOP. If verification fails, the system is considered "Dirty" and must be forensicly audited or reset to Ground Zero.
+
 ### Rule 4: The 20% Resource Law
 - **Directive**: Every service maintains a functional resource buffer. 
 - **Action**: Zero pods with OOMKills are permitted. Ensure >200MB free per pod and <80% CPU usage (`microk8s kubectl top pods`).
