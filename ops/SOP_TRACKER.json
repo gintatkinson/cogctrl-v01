@@ -1,6 +1,6 @@
 {
-  "current_sop_id": "SOP-02",
-  "last_verified_at": "2026-04-07T19:29:37Z",
-  "mission_status": "VM_Provisioned_Cluster_Pending",
-  "recovery_instruction": "Execute bash checkpoint.sh to verify VM readiness."
+  "current_sop_id": "SOP-03",
+  "last_verified_at": "2026-04-07T19:33:43Z",
+  "mission_status": "Cluster_Bootstrapped_Persistence_Ready",
+  "recovery_instruction": "Execute bash checkpoint.sh to verify cluster and persistence."
 }
