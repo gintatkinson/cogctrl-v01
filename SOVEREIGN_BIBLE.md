@@ -38,7 +38,7 @@
 - **Directive**: No code or manifest modifications are permitted if a configuration variable, environment variable, or official script can achieve the same result.
 - **Action**: Always prioritize standard configuration patterns (e.g., TFS_COMPONENTS in tfs.sh) over manual "hacking" of YAMLs or source code. Any non-trivial modification must be cross-referenced against the original ETSI baseline and explicitly approved.
 
-## Sovereign Lite-Configuration Whitelist (Mandated 8 Services)
+## Sovereign Lite-Configuration Whitelist (Mandated 9 Services)
 1. contextservice
 2. deviceservice
 3. serviceservice
@@ -47,8 +47,13 @@
 6. dltservice
 7. interdomainservice
 8. webuiservice
+9. nbiservice
 
 ## Sovereign Performance & Resource Laws
+
+### Rule 13: HTTPS Sovereignty (The 443 Lock)
+- **Directive**: Any service exposure MUST use the official TFS Ingress (NGINX) and terminate at Port 443 on the Host IP. 
+- **Action**: Creating custom NodePorts or using non-standard HTTP ports for WebUI/API access is an ARCHITECTURAL BREACH. If `https://<IP>/tfs-api/` fails, debug the Ingress manifest; do NOT map a port.
 
 ### Rule 4: The 20% Resource Law
 - **Directive**: Every service maintains a functional resource buffer. 
