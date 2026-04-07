@@ -1,6 +1,6 @@
 {
-  "current_sop_id": "SOP-04",
-  "last_verified_at": "2026-04-07T11:50:13Z",
-  "mission_status": "HARDENING_IN_PROGRESS",
+  "current_sop_id": "SOP-06",
+  "last_verified_at": "2026-04-07T12:21:35Z",
+  "mission_status": "Core_Activation_In_Progress",
   "recovery_instruction": "Execute bash checkpoint.sh --verify to re-anchor."
 }
