@@ -1,6 +1,6 @@
 {
-  "current_sop_id": "SOP-04",
-  "last_verified_at": "2026-04-07T19:33:59Z",
-  "mission_status": "Source_Verified_VM_Context",
-  "recovery_instruction": "Execute bash checkpoint.sh to verify source availability."
+  "current_sop_id": "SOP-05",
+  "last_verified_at": "2026-04-07T19:36:09Z",
+  "mission_status": "Forensic_Hardening_Applied",
+  "recovery_instruction": "Execute bash checkpoint.sh to verify Rule 35 and Patches."
 }
