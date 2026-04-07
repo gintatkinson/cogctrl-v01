@@ -1,6 +1,6 @@
 {
-  "current_sop_id": "SOP-03",
-  "last_verified_at": "2026-04-07T19:33:43Z",
-  "mission_status": "Cluster_Bootstrapped_Persistence_Ready",
-  "recovery_instruction": "Execute bash checkpoint.sh to verify cluster and persistence."
+  "current_sop_id": "SOP-04",
+  "last_verified_at": "2026-04-07T19:33:59Z",
+  "mission_status": "Source_Verified_VM_Context",
+  "recovery_instruction": "Execute bash checkpoint.sh to verify source availability."
 }
