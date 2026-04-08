@@ -1,6 +1,6 @@
 {
   "current_sop_id": "SOP-06-RESTORE-FINAL",
-  "last_verified_at": "2026-04-08T17:22:02Z",
+  "last_verified_at": "2026-04-08T18:14:40Z",
   "mission_status": "Enclave_Sequential_Scale_Up",
   "recovery_instruction": "Execute bash checkpoint.sh to verify enclave stability."
 }
