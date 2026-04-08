@@ -1,0 +1,5 @@
+- [x] Purge unauthorized deployments in `default` namespace
+- [x] Add `dlt` to `TFS_COMPONENTS` in `tfs_runtime_env_vars.sh`
+- [/] Deploy `dltservice` to `tfs` namespace (Fixing component.sh and Secrets)
+- [ ] Verify 9/9 services are Ready in `tfs` namespace
+- [ ] Run `bash checkpoint.sh` and push to GitHub
