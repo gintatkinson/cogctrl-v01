@@ -23,3 +23,6 @@ The project originated from "[Teraflow H2020 project](https://teraflow-h2020.eu/
 ## Documentation
 The [TeraFlowSDN Wiki](https://labs.etsi.org/rep/tfs/controller/-/wikis/home) pages include the main documentation for the ETSI TeraFlowSDN Controller.
 The documentation includes project documentation, installation instructions, functional tests, supported NBIs and SBIs, etc.
+
+## Sovereign Enclave Recovery
+For instructions on how to restore the Sovereign CogCtrl Enclave from a fresh state, see the [Sovereign Recovery Protocol](RECOVERY_PROTOCOL.md).
